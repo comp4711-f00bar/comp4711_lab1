@@ -14,7 +14,7 @@ and open the template in the editor.
         <?php
         include('student.php');
 
-        // Create an array, meant to held Students
+        // Create an array, meant to hold Students
         $students = array();
 
         //Create, instantiate, and add John Doe
