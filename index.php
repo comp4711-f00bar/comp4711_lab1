@@ -14,10 +14,10 @@ and open the template in the editor.
         <?php
         include('student.php');
 
-        // Create an array of objects, meant to held Students
+        // Create an array, meant to held Students
         $students = array();
 
-        //Create and initialize John Doe
+        //Create, instantiate, and add John Doe
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -26,10 +26,9 @@ and open the template in the editor.
         $first->add_grade(65);
         $first->add_grade(75);
         $first->add_grade(55);
-        //Add John Doe
         $students['j123'] = $first;
         
-        // Create and initialize Albert Einstein
+        // Create, instantiate, and add Albert Einstein
         $second = new Student();
         $second->surname = "Einstein";
         $second->first_name = "Albert";
@@ -39,22 +38,18 @@ and open the template in the editor.
         $second->add_grade(95);
         $second->add_grade(80);
         $second->add_grade(50);
-        
-        // Add Albert Einstein
         $students['a456'] = $second;
         
-        // Create and initialize myself
+        // Create, instantiate, and add myself
         $third = new Student();
         $third->surname = "Robertson";
         $third->first_name = "Theresa";
         $third->add_email('home','theresa.n.robertson@gmail.com');
         $third->add_grade(95);
-        
-        // Add myself
-        $students['c789'] = $third;
+        $students['q789'] = $third;
         
         // Sort the array
-        ksort($students, 1);
+        ksort($students);
         
         // Print each Student in the array
         foreach($students as $student){
