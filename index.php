@@ -12,7 +12,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        include('student.php');
+        include('Student.php');
 
         // Create an array, meant to hold Students
         $students = array();
