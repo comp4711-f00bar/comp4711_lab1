@@ -1,3 +1,3 @@
-comp4711_lab1
+comp4711_lab2
 =============
-COMP4711 Lab 1
+COMP4711 Lab 2
